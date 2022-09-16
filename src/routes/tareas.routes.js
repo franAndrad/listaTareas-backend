@@ -1,16 +1,16 @@
 import {Router} from 'express';
-import { borrarProducto, crearProducto, listarProductos } from '../controllers/tareas.controller';
+import { borrarTarea, crearTarea, listarTareas } from '../controllers/tareas.controller';
 
 const router = Router();
 
 router
 .route('/')
-.get(listarProductos)
-.post(crearProducto);
+.get(listarTareas)
+.post(crearTarea);
 
 router
 .route('/:id')
-.delete(borrarProducto);
+.delete(borrarTarea);
 
 export default router;
 

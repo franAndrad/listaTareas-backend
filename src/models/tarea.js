@@ -1,13 +1,14 @@
-import mongoose, {Scheme} from "mongoose";
+import mongoose, {Schema} from "mongoose";
 
-const tareaSchema = new Scheme ({
+const tareaSchema = new Schema ({
     tarea: {
         type: String,
         required: true,
         minlenght: 2,
-        maxlenght: 50
+        maxlenght: 50,
+        unique: true
     }
-})
+});
 
 const Tarea = mongoose.model('tarea',tareaSchema) //tiene que tener el nombre de lo que se va a guardar en la BD
 
