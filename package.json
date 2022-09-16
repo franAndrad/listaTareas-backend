@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec babel-node index.js"
   },
-  "keywords": [],
+  "keywords": ["tarea","api","eliminar","mostrar","cargar"],
   "author": "Francisco Andrade",
   "license": "ISC",
   "dependencies": {
